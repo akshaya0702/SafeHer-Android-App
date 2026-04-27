@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient1">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@drawable/logo1"
+            android:tint="#FFFFFF" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="SAFE HER"
+            android:textSize="35sp"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif-black"
+            android:letterSpacing="0.05"
+            android:textColor="#fff"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="WELCOME"
+            android:textColor="#FFFFFF"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:letterSpacing="0.2" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/welcome_card"
+        android:elevation="10dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:paddingTop="100dp"
+        android:paddingBottom="50dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SafeHer Experience"
+            android:textColor="#2D3436"
+            android:textSize="24sp"
+            android:padding="10dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="Join our community for a safer environment."
+            android:textColor="#636E72"
+            android:textSize="15sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <Button
+                android:id="@+id/btn_login"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/ribble"
+                android:text="LOGIN"
+                android:textColor="#9C27B0"
+                style="@style/Widget.AppCompat.Button.Borderless" />
+
+            <Button
+                android:id="@+id/btn_register"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/ribble"
+                android:text="REGISTER"
+                android:textColor="#9C27B0"
+                style="@style/Widget.AppCompat.Button.Borderless" />
+        </LinearLayout>
+
+    </LinearLayout>
+</RelativeLayout>

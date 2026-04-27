@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/rounded_dialog"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <View
+        android:layout_width="40dp"
+        android:layout_height="4dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="12dp"
+        android:background="#D1D1D1" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_dest_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="DISTANCE"
+            android:textColor="#202124"
+            android:textSize="22sp"
+            android:fontFamily="sans-serif-medium" />
+
+        <TextView
+            android:id="@+id/tv_distance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_dest_name"
+            android:text="12 km • 30 min"
+            android:textColor="#70757A"
+            android:textSize="14sp" />
+        <TextView
+            android:id="@+id/tv_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_distance"
+            android:text="Address"
+            android:textColor="#70757A"
+            android:textSize="54px" />
+
+        <ImageButton
+            android:id="@+id/btn_close"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_alignParentEnd="true"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:src="@android:drawable/ic_menu_close_clear_cancel"
+            app:tint="#70757A" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/btn_mode_car"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:background="?attr/selectableItemBackground">
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/ic_car" /> <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Drive" android:textSize="12sp" android:textColor="#1A73E8"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/btn_mode_bike"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:background="?attr/selectableItemBackground">
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/ic_bike" />
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Two-wheeler" android:textSize="12sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/btn_mode_bus"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:background="?attr/selectableItemBackground">
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/ic_bus" />
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Transit" android:textSize="12sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:orientation="horizontal">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_start_navigation"
+            android:layout_width="0dp"
+            android:layout_height="54dp"
+            android:layout_weight="1"
+            android:layout_marginEnd="8dp"
+            android:text="Start"
+            android:textAllCaps="false"
+            android:textSize="16sp"
+            app:cornerRadius="27dp"
+            app:icon="@drawable/ic_navigation"
+            android:backgroundTint="#1A73E8" />
+
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_call_now"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:layout_width="wrap_content"
+            android:layout_height="54dp"
+            android:text="Call"
+            android:textAllCaps="false"
+            android:textColor="#1A73E8"
+            app:cornerRadius="27dp"
+            app:strokeColor="#DADCE0" />
+
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_stop_navigation"
+            android:layout_width="wrap_content"
+            android:layout_height="54dp"
+            android:layout_marginEnd="8dp"
+            android:text="Stop"
+            android:visibility="gone"
+            android:textAllCaps="false"
+            android:textSize="16sp"
+            app:cornerRadius="27dp"
+            android:backgroundTint="#F44336" />
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:clipChildren="false"
+    android:clipToPadding="false">
+
+    <View
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="-120dp"
+        android:layout_marginEnd="-100dp"
+
+        android:id="@+id/top_circle"
+        android:background="@drawable/gradient" />
+
+    <LinearLayout
+        android:id="@+id/logo_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:alpha="0"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:elevation="12dp"
+            android:src="@drawable/logo1" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="SAFEHER"
+            android:textSize="36sp"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif-black"
+            android:letterSpacing="0.05"
+            android:textColor="#2D3436" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Your Safety, Our Priority"
+            android:textSize="14sp"
+            android:textAllCaps="true"
+            android:letterSpacing="0.2"
+            android:textColor="#636E72" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="350dp"
+        android:layout_height="350dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="-160dp"
+        android:layout_marginStart="-130dp"
+
+        android:id="@+id/bottom_circle"
+        android:background="@drawable/gradient" />
+
+</RelativeLayout>
