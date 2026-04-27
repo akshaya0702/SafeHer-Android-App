@@ -10,6 +10,7 @@ SafeHer is an Android-based safety application designed for women, with a specia
 - Shake Detection for Emergency Activation
 - Fake Call Feature for Safety Situations
 - Accessibility support for visually impaired users using voice commands
+- Hands-free emergency activation for visually impaired users
 
 ## 🛠 Technologies Used
 - Java
